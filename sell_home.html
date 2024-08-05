@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real Estate</title>
+    <link rel="icon" type="image/icon" href="">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-2 ms-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <p id="quiz" class="mb-0 display-5">Res</p>
+                <p id="zone" class="mb-0 ms-1 display-5 text-info">Mito</p>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link item-nav" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-nav" href="buy_home.html">Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sell_home.html">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item-nav" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 p-4 custom-container">
+        <h1>Upload Your Property Details</h1>
+        <h3 style="display: inline-block;">Get the best value for your property in a few steps</h3>
+        <img src="Images/h5.png" alt="Property Image" class="img-fluid right-image">
+    </div>
+
+    <!-- Form Section -->
+    <div class="container mt-5">
+        <div class="form-container">
+            <h2 class="mb-4">Property Information Form</h2>
+            <form>
+                <!-- Rent/Sell Selector -->
+                <div class="form-section">
+                    <label for="propertyType">Select Property Type:</label>
+                    <select id="propertyType" class="form-select">
+                        <option value="">Select...</option>
+                        <option value="rent">Rent</option>
+                        <option value="sell">Sell</option>
+                    </select>
+                </div>
+
+                <!-- Property Category Selector -->
+                <div class="form-section">
+                    <label for="propertyCategory">Property Category:</label>
+                    <select id="propertyCategory" class="form-select">
+                        <option value="">Select...</option>
+                        <option value="home">Home</option>
+                        <option value="shop">Shop</option>
+                        <option value="office">Office</option>
+                        <option value="land">Land</option>
+                    </select>
+                </div>
+
+                <!-- Number of Rooms -->
+                <div class="form-section">
+                    <label for="numberOfRooms">Number of Rooms:</label>
+                    <input type="number" id="numberOfRooms" class="form-control">
+                </div>
+
+                <!-- Address -->
+                <div class="form-section">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" class="form-control">
+                </div>
+
+                <!-- City Name -->
+                <div class="form-section">
+                    <label for="city">City Name:</label>
+                    <input type="text" id="city" class="form-control">
+                </div>
+
+                <!-- Country Name -->
+                <div class="form-section">
+                    <label for="country">Country Name:</label>
+                    <input type="text" id="country" class="form-control">
+                </div>
+
+                <!-- Area of Property -->
+                <div class="form-section">
+                    <label for="area">Which area is your property in?</label>
+                    <input type="text" id="area" class="form-control">
+                </div>
+
+                <!-- Size of Property -->
+                <div class="form-section">
+                    <label for="size">What is the size of your property?</label>
+                    <input type="text" id="size" class="form-control">
+                </div>
+
+                <!-- Asking Price -->
+                <div class="form-section">
+                    <label for="price">What is the asking price?</label>
+                    <input type="number" id="price" class="form-control">
+                </div>
+
+                <!-- Property Name -->
+                <div class="form-section">
+                    <label for="propertyName">Name your property:</label>
+                    <input type="text" id="propertyName" class="form-control">
+                </div>
+
+                <!-- Property Condition -->
+                <div class="form-section">
+                    <label for="condition">What is the condition of your property?</label>
+                    <input type="text" id="condition" class="form-control">
+                </div>
+
+                <!-- Upload Images -->
+                <div class="form-section">
+                    <label for="images">Upload images of your property:</label>
+                    <input type="file" id="images" class="form-control" multiple>
+                </div>
+
+                <!-- Contact Number -->
+                <div class="form-section">
+                    <label for="contact">Tell us how to contact you (number):</label>
+                    <input type="tel" id="contact" class="form-control">
+                </div>
+
+                <!-- Your Name -->
+                <div class="form-section">
+                    <label for="yourName">What is your name?</label>
+                    <input type="text" id="yourName" class="form-control">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-section text-center">
+                    <button type="submit" class="btn btn-primary">Submit for Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 mb-3">
+            <h5><strong>About Us</strong></h5>
+            <p>We offer the best real estate deals and services, helping you find your dream home or sell your property quickly and efficiently.</p>
+          </div>
+          
+          <div class="col-md-6 text-md-end text-sm-start col-sm-12 mb-3">
+            <h5><strong>Contact Us</strong></h5>
+            <p><i class="bi bi-envelope"></i> info@realestate.com</p>
+            <p><i class="bi bi-telephone"></i> +92 334-8154611</p>
+            <h5><strong>Follow Us</strong></h5>
+            <div>
+              <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+1TRxCZSm/Fp4pJp4t9SOz6Ff7xMe" crossorigin="anonymous"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+        import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-storage.js";
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBV7KIkF8DBxCQdgTzeO3fbgHqoduoUdm8",
+          authDomain: "real-estate-web-71f20.firebaseapp.com",
+          projectId: "real-estate-web-71f20",
+          storageBucket: "real-estate-web-71f20.appspot.com",
+          messagingSenderId: "116881326263",
+          appId: "1:116881326263:web:7b481387f1269af4f54d32",
+          measurementId: "G-ZD7VR9NERE"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const storage = getStorage(app);
+        const analytics = getAnalytics(app);
+      
+        document.addEventListener('DOMContentLoaded', () => {
+          const form = document.querySelector('form');
+          form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+      
+            const propertyType = document.getElementById('propertyType').value;
+            const propertyCategory = document.getElementById('propertyCategory').value;
+            const numberOfRooms = document.getElementById('numberOfRooms').value;
+            const address = document.getElementById('address').value;
+            const city = document.getElementById('city').value;
+            const country = document.getElementById('country').value;
+            const area = document.getElementById('area').value;
+            const size = document.getElementById('size').value;
+            const price = document.getElementById('price').value;
+            const propertyName = document.getElementById('propertyName').value;
+            const condition = document.getElementById('condition').value;
+            const contact = document.getElementById('contact').value;
+            const userName = document.getElementById('yourName').value;
+            const images = document.getElementById('images').files;
+      
+            // Validation check
+            if (!propertyType || !propertyCategory || !numberOfRooms || !address || !city || !country || !area || !size || !price || !propertyName || !condition || !contact || !userName || images.length === 0) {
+              alert('Please fill out all the fields and upload at least one image.');
+              return;
+            }
+      
+            try {
+              const imageUrls = [];
+              for (const image of images) {
+                const storageRef = ref(storage, `houses/${image.name}`);
+                const snapshot = await uploadBytes(storageRef, image);
+                const downloadURL = await getDownloadURL(snapshot.ref);
+                imageUrls.push(downloadURL);
+              }
+      
+              await addDoc(collection(db, 'properties'), {
+                propertyType,
+                propertyCategory,
+                numberOfRooms,
+                address,
+                city,
+                country,
+                area,
+                size,
+                price,
+                propertyName,
+                condition,
+                contact,
+                userName,
+                imageUrls
+              });
+      
+              alert('Property details submitted successfully!');
+              form.reset();
+            } catch (error) {
+              console.error('Error adding document: ', error);
+              alert('Error submitting the form, please try again.');
+            }
+          });
+        });
+      </script>
+      
+      
+  </body>
+</html>
